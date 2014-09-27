@@ -13,15 +13,17 @@ public class SubActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		Log.i("myinfo", "Sub onCreate");
 		setContentView(R.layout.activity_sub);
 		
-		Button btn = (Button) findViewById(R.id.subbtn);
+		Log.i("myinfo", "Sub onCreate");
+
+		
+		Button btn = (Button) findViewById(R.id.subBtn);
 		
 		btn.setOnClickListener(new OnClickListener() {
 
 			@Override
-			public void onClick(View arg0) {
+			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				finish();
 			}
